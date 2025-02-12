@@ -15,7 +15,7 @@ closeButton.addEventListener('click', () => {
 
 var tlHeader = gsap.timeline()
 
-tlHeader.from('.navbar span', {
+tlHeader.from('.navbar img', {
   opacity: 0,
   y: -30,
   duration: 1
@@ -69,3 +69,35 @@ tlHeader.from('.catchphrase h1', {
     stagger: 0.15,
     duration: 1
 })
+
+
+
+// window.addEventListener("scroll", function() {
+//   const navbar = document.getElementById("navbar");
+//   if (window.scrollY > 50) { // Adjust scroll value as needed
+//     navbar.style.paddingTop = "30px";
+//     navbar.style.backgroundColor = "#ffffff54";
+//   } else {
+//     navbar.style.paddingTop = "30px";
+//     navbar.style.backgroundColor = "transparent"; // Or whatever the original background color is
+//   }
+// });
+
+window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("navbar");
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth > 992) { // Only apply the effect for larger screens
+    if (window.scrollY > 50) {
+      navbar.style.paddingTop = "5px";
+      navbar.style.backgroundColor = "#ffffff54";
+    } else {
+      navbar.style.paddingTop = "30px";
+      navbar.style.backgroundColor = "transparent"; // Or your original color
+    }
+  } else {
+    // Reset to default styles for smaller screens if needed
+    navbar.style.paddingTop = "30px";
+    navbar.style.backgroundColor = "transparent";
+  }
+});
