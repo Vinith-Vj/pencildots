@@ -5,6 +5,7 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     background-color: black;
     color: white;
+    scroll-behavior: smooth;
   }
 
   p {
@@ -382,15 +383,18 @@ body {
     margin-top: 30px;
   }
 
-
-  .icon {
+  .icons {
     position: fixed;
     bottom: 10%;
     left: 4%;
+    z-index: 1;
+
+  }
+
+  .icon {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    z-index: 1;
   }
 
   .icon img {

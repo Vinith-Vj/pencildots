@@ -30,7 +30,7 @@ tlHeader.from('.navbar button', {
 
 var tlMenu = gsap.timeline()
 
-tlMenu.from('.menu-content h2', {
+tlMenu.from('.menu-content img', {
   opacity: 0,
   x: 150,
   duration: 1
