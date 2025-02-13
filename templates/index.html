@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pencildots</title>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,10 +90,10 @@
                 
                     {% if forloop.counter|divisibleby:2 %}
 
-                        <div class="col-lg-7 col-sm-12">
+                        <div class="col-lg-7 col-sm-12 column">
                             <img src="{{ service.image.url }}"  alt="" data-aos="zoom-in" data-aos-duration="1000"> 
                         </div>
-                        <div class="col-lg-5 col-sm-12">
+                        <div class="col-lg-5 col-sm-12 column">
                             <div class="service_details" data-aos="fade-down" data-aos-duration="1000">
                                 <div class='d-flex flex-column'>
                                     <h2>{{ service.title }}</h2>
@@ -108,7 +108,7 @@
 
                     {% else %}
 
-                        <div class="col-lg-5 col-sm-12">
+                        <div class="col-lg-5 col-sm-12 column">
                             <div class="service_details text-end" data-aos="fade-down" data-aos-duration="1000">
                                 <div class='d-flex flex-column'>
                                     <h2>{{ service.title }}</h2>
@@ -120,7 +120,7 @@
                                 <p>{{ service.description }}</p>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-sm-12">
+                        <div class="col-lg-7 col-sm-12 column">
                             <img src="{{ service.image.url }}" alt="" data-aos="zoom-in" data-aos-duration="1000"> 
                         </div>
 
@@ -161,6 +161,8 @@
         {% endfor %}
         
     </div>
+    
+    
 
     <div class="footer" id='contact'>
         <div class="d-flex justify-content-center align-items-center gap-3 flex-column">

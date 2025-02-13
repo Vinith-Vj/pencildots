@@ -98,6 +98,6 @@ window.addEventListener("scroll", function() {
   } else {
     // Reset to default styles for smaller screens if needed
     navbar.style.paddingTop = "30px";
-    navbar.style.backgroundColor = "transparent";
+    navbar.style.backgroundColor = "#ffffff54";
   }
 });
