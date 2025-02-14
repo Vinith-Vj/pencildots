@@ -63,12 +63,12 @@
       
     <div class="about mt-50" id='about'>
         <div class="vh-80">
-            <div class="row">
-                <div class="col-6">
+            <div class="row d-flex flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 col-sm-12 column1">
                     <img src="{{ about.image.url }}" alt="" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
     
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-12">
                     <div class="about_details"  data-aos="fade-down" data-aos-duration="1000">
                         <h2>{{ about.title }}</h2>
                         <p>"{{ about.description }}"</p>
@@ -93,7 +93,7 @@
                         <div class="col-lg-7 col-sm-12 column">
                             <img src="{{ service.image.url }}"  alt="" data-aos="zoom-in" data-aos-duration="1000"> 
                         </div>
-                        <div class="col-lg-5 col-sm-12 column">
+                        <div class="col-lg-5 col-sm-12">
                             <div class="service_details" data-aos="fade-down" data-aos-duration="1000">
                                 <div class='d-flex flex-column'>
                                     <h2>{{ service.title }}</h2>
@@ -108,7 +108,7 @@
 
                     {% else %}
 
-                        <div class="col-lg-5 col-sm-12 column">
+                        <div class="col-lg-5 col-sm-12">
                             <div class="service_details text-end" data-aos="fade-down" data-aos-duration="1000">
                                 <div class='d-flex flex-column'>
                                     <h2>{{ service.title }}</h2>
