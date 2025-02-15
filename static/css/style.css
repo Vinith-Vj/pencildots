@@ -66,6 +66,9 @@ body {
         width: 100vw;
         padding-top: 30px;
       }
+      .logo {
+        height: 70px;
+      }
 }
 
   .container .navbar span {
@@ -130,6 +133,12 @@ body {
   
   .menu-content a:hover {
     color: gray;
+  }
+
+  @media (max-width: 576px) {
+    .menu-content h2, button {
+      font-size: 30px;
+    }
   }
 
   .catchphrase {
