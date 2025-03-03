@@ -1,12 +1,13 @@
 from django.shortcuts import render
-from .models import Background, Team, Service, Gallery, About
+from .models import Header, Team, Service, Gallery, About, Logo
 
 # Create your views here.
 
 def index(request):
-    background = Background.objects.last() # Get the latest background image
+    header = Header.objects.last() # Get the latest background image
+    logo = Logo.objects.last()
     teams = Team.objects.all()
     services = Service.objects.all()
     galleries = Gallery.objects.all()
     about = About.objects.first()
-    return render(request, 'index.html', {'background': background, 'teams': teams, 'services': services, 'galleries': galleries, 'about': about})
+    return render(request, 'index.html', {'logo': logo, 'header': header, 'teams': teams, 'services': services, 'galleries': galleries, 'about': about})

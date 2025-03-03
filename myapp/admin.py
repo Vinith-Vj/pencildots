@@ -1,9 +1,11 @@
 from django.contrib import admin
-from .models import Background, Team, Service, Gallery, About
+from .models import Header, Team, Service, Gallery, About, Logo
 
 # Register your models here.
 
-admin.site.register(Background)
+admin.site.register(Header)
+
+admin.site.register(Logo)
 
 admin.site.register(Team)
 

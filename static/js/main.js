@@ -1,6 +1,7 @@
 const menuButton = document.getElementById('menuButton');
 const closeButton = document.getElementById('closeButton');
 const menu = document.getElementById('menu');
+const navLinks = document.querySelectorAll('.navLink');
 
 menuButton.addEventListener('click', () => {
   menu.classList.add('show');
@@ -12,6 +13,13 @@ closeButton.addEventListener('click', () => {
   tlMenu.reverse()
 });
 
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+      menu.classList.remove('show');  // Optional if you want to hide menu on link click
+      tlMenu.reverse();
+      console.log('clicked');
+  });
+});
 
 var tlHeader = gsap.timeline()
 
